@@ -1,0 +1,43 @@
+
+.imgBanner{
+    width: 100%;
+    max-height: 20rem;
+}
+
+.content{
+    margin-top: 1rem;
+    padding: 1rem 8rem;
+
+    .postContent{
+        margin-top: 2rem;
+        h4{
+            font-size:1.5rem;
+        }
+
+        p,a{
+            line-height: 2rem;
+            margin: 3rem 0;
+            line-height: 2.5rem;
+        }
+    }
+
+    ul{
+        margin-top: 1rem;
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
+        gap: 3rem;
+        justify-content: center;
+        list-style: none;
+        li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .icon{
+                margin-right: 0.5rem;
+            }
+        }
+    }
+    
+}
+

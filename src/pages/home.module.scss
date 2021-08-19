@@ -1,0 +1,59 @@
+
+.container{
+    margin: 0 auto;
+    width: 1120px;
+    padding: 0 2rem; //ter uma largura nas laterais caso a pagina seja menor q 1120px
+    
+}
+
+.content{
+    margin: 2rem 7rem;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    max-width: 720px;
+    ul{
+        list-style: none;
+        li{
+            strong{
+                font-size: 1.9rem;
+            }
+
+            p{
+                margin-top: 1rem;
+            }
+
+            div{
+                display: flex;
+                align-items: center;
+                padding:1rem 0rem;
+                time{
+                    margin: 0 3rem 0 0.25rem;
+                }
+                a{
+                    margin: 0rem 0.25rem;
+                }
+            }
+
+            & + li{
+                margin-top: 2rem;
+            }
+        }
+
+    }
+
+    button{
+        margin-top: 1rem;
+        background-color: transparent;
+        border: 0;
+        color: var(--highlight);
+        
+        //Quando o filter for alterado, levara 2 segundos para mudar totalmente a cor
+        transition: filter 0.2s;
+
+        //Ao passar o mouse, gera uma opacity
+        &:hover{
+            filter: brightness(0.9);
+        }
+    }
+}
